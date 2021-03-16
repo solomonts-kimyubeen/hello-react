@@ -4,6 +4,7 @@ import MyName from './MyName';
 import Counter from './Counter';
 import ValidationSample from './ValidationSample';
 import ScrollBox from './ScrollBox';
+import IterationSample from './IterationSample';
 
 //const App = ()=>{}
 // function App() {
@@ -111,6 +112,7 @@ class App extends Component {
     return (
       <div>
         <ValidationSample />
+        <hr/>
         <ScrollBox ref={(ref) => this.scrollBox=ref} />
         <button onClick={() => this.scrollBox.scrollToBottom()}>
           맨 밑으로
@@ -118,6 +120,8 @@ class App extends Component {
         <button onClick={() => this.scrollBox.scrollToTop()}>
           맨 위로
         </button>
+        <hr/>
+        <IterationSample />
       </div>
     )
   }
